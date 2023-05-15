@@ -6,7 +6,7 @@
 #    By: dsudadec <dsudadec@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/12 11:51:04 by dsudadec          #+#    #+#              #
-#    Updated: 2023/05/15 01:47:32 by dsudadec         ###   ########.fr        #
+#    Updated: 2023/05/15 17:31:58 by dsudadec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,10 +22,6 @@ CFLAGS = -Wall -Werror -Wextra
 HEADER = ft_printf.h
 
 all: $(NAME)
-
-%o: %c
-	$(CC) $(FLAGS) -c $< -o $@
-
 
 $(NAME): $(OBJ) $(HEADER)
 	ar rcs $(NAME) $(OBJ)
