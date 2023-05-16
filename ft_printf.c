@@ -6,7 +6,7 @@
 /*   By: dsudadec <dsudadec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 01:21:57 by dsudadec          #+#    #+#             */
-/*   Updated: 2023/05/15 01:28:42 by dsudadec         ###   ########.fr       */
+/*   Updated: 2023/05/17 03:04:21 by dsudadec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,14 @@ int	ft_format(const char c, va_list args)
 	if (c == 'p')
 	{
 		count += write(1, "0x", 2);
-		return (count += ft_point(va_arg(args, unsigned long)));
+		return (count += ft_pointer(va_arg(args, unsigned long long)));
 	}
 	if (c == '%')
 		return (write(1, "%", 1));
 	if (c == 'x')
-		return (ft_xlow(va_arg(args, unsigned int)));
+		return (ft_xlow(va_arg(args, unsigned long long)));
 	if (c == 'X')
-		return (ft_xup(va_arg(args, unsigned int)));
+		return (ft_xup(va_arg(args, unsigned long long)));
 	return (0);
 }
 

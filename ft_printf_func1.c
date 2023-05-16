@@ -6,7 +6,7 @@
 /*   By: dsudadec <dsudadec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 01:06:18 by dsudadec          #+#    #+#             */
-/*   Updated: 2023/05/15 01:52:48 by dsudadec         ###   ########.fr       */
+/*   Updated: 2023/05/17 03:02:10 by dsudadec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,12 @@ int	ft_putnbr(int n)
 		c = (nb % 10) + '0';
 		len += ft_putchar(c);
 	}
+	else
+	{
+		c = nb + '0';
+		len += ft_putchar(c);
+	}
+
 	return (len);
 }
 
@@ -68,10 +74,15 @@ int	ft_uint(unsigned int n)
 		c = (n % 10) + '0';
 		len += ft_putchar(c);
 	}
+	else
+	{
+		c = n + '0';
+		len += ft_putchar(c);
+	}
 	return (len);
 }
 
-int	ft_pointer(unsigned long p)
+int	ft_pointer(unsigned long long p)
 {
 	int		len;
 

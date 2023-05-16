@@ -6,7 +6,7 @@
 /*   By: dsudadec <dsudadec@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 01:16:46 by dsudadec          #+#    #+#             */
-/*   Updated: 2023/05/15 01:21:22 by dsudadec         ###   ########.fr       */
+/*   Updated: 2023/05/17 03:02:42 by dsudadec         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_strlen(char *s)
 	return (i);
 }
 
-int	ft_xlow(unsigned long x)
+int	ft_xlow(unsigned long long x)
 {
 	int	len;
 
@@ -36,7 +36,7 @@ int	ft_xlow(unsigned long x)
 	return (len);
 }
 
-int	ft_xup(unsigned long X)
+int	ft_xup(unsigned long long X)
 {
 	int	len;
 
